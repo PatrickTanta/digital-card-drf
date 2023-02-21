@@ -40,7 +40,10 @@ INSTALLED_APPS = [
 
     # 3rd party
     'rest_framework',
-    'drf_yasg'
+    'drf_yasg',
+
+    # my apps
+    'users'
 ]
 
 MIDDLEWARE = [
@@ -125,3 +128,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Class for handle users
+AUTH_USER_MODEL= 'users.User'
